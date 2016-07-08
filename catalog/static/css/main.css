@@ -1,0 +1,399 @@
+html,
+body{
+    margin: 0px;
+    max-width: 100%;
+
+}
+
+
+/*********************************************
+                Menu
+*********************************************/
+
+.navbar-brand { 
+  width: 70px;
+  height: 50px;
+  background-size: 50px;  
+}
+
+.nav-tabs {
+  display: inline-block;
+  border-bottom: none;
+  padding-top: 15px;
+  font-weight: bold;
+}
+.nav-tabs > li > a, 
+.nav-tabs > li > a:hover, 
+.nav-tabs > li > a:focus, 
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border: none;
+  border-radius: 0;
+}
+
+.nav-list { border-bottom: px solid #eee; }
+.nav-list > li { 
+  padding: 20px 15px 15px;
+ 
+}
+.nav-list > li:last-child { border-right: 0px solid #eee; }
+.nav-list > li > a:hover { text-decoration: none; }
+.nav-list > li > a > span {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mega-dropdown { position: static !important; }
+.mega-dropdown-menu {
+  padding: 20px 15px 15px;
+  text-align: center;
+  width: 100%;
+}
+
+
+.navbar-brand {
+    width: 70px;
+    height: 50px;
+    background-size: 50px;
+    padding-top: 7px;
+}
+.navbar-nav {
+    padding-left: 15px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #00486c;
+}
+.container-fluid-nav {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(0,0,0);
+}
+
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+    color: white;
+    background-color: #428bca;
+    
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0px;
+    margin: 2px 0px 0px;
+    font-size: 14px;
+    list-style: none;
+    background-color: white;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.14902);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.172549) 0px 6px 12px;
+}
+.nav-list > li {
+    padding: 20px 15px 15px;
+    border-left:0px;
+}
+.nav-list {
+    border-bottom: 0px;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: white;
+    cursor: default;
+    background-color: #428bca;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: black;
+    cursor: default;
+    background-color: rgb(255, 255, 255);
+    border: solid black 1px;
+}
+
+
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    
+}
+.fade-carousel .carousel-inner .item {
+    
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    opacity: .7;
+}
+
+
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+
+/*********************************************
+                Footer
+*********************************************/
+
+/* Footer */
+
+footer
+{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+    linear-gradient(
+    rgba(226, 138, 28, 0.85),
+    rgba(0, 0, 0, 0)
+    ),
+    /* image to overlay */
+    url(../image/footer.png);
+    background-size: cover;
+    
+} 
+
+footer h3
+{
+    text-align: center;
+    color: #000000;
+}
+
+footer p
+{
+    color: #000000;
+    text-align: left;
+}
+
+footer a{
+    color: #000000;
+}
+
+footer a:hover{
+    color: #848484;
+}
+
+.footer-link{
+    list-style-type: none;
+}
+
+ul.social-link li
+{
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 5px;
+
+}
+
+
+/*********************************************
+                Theme Elements
+*********************************************/
+
+.gold{
+    color: #FFBF00;
+}
+
+/*********************************************
+                    PRODUCTS
+*********************************************/
+
+.product{
+    border: 1px solid #dddddd;
+
+}
+
+.product>img{
+    max-width: 230px;
+}
+
+.product-rating{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.product-title{
+    font-size: 20px;
+}
+
+.product-desc{
+    font-size: 14px;
+}
+
+.product-price{
+    font-size: 22px;
+}
+
+.product-stock{
+    color: #74DF00;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.product-info{
+        margin-top: 50px;
+}
+
+/*********************************************
+                    VIEW
+*********************************************/
+
+.content-wrapper-product {
+    max-width: 1140px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.container-fluid-product{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.view-wrapper{
+    float: right;
+    max-width: 70%;
+    margin-top: 25px;
+}
+
+.container-product {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 100%;
+}
+
+/*********************************************
+                ITEM 
+*********************************************/
+
+.service1-items {
+    padding: 0px 0 0px 0;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    height: 321px;
+    width: 130px;
+}
+
+.service1-item {
+    height: 107px;
+    width: 100%;
+    display: block;
+    float: left;
+    position: relative;
+    border-right: 1px solid #DDD;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+}
+
+.service1-item > img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+}
+
+.service1-item > img:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.pagination>li>a, .pagination>li>span { border-radius: 50% !important;margin: 0 5px;}
+
+

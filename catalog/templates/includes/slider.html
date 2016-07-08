@@ -1,0 +1,46 @@
+{% load staticfiles %}
+{% load thumbnail %}
+
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Indicators --> 
+  <ol class="carousel-indicators">
+    {% for slider in sliders %}
+    {% if slider.sort_order_slider == 0 %}
+    <li data-target="#bs-carousel" data-slide-to="{{slider.sort_order_slider}}" class="active"></li>
+    {% else %}
+    <li data-target="#bs-carousel" data-slide-to="{{slider.sort_order_slider}}"></li>
+    {% endif %}
+    {% endfor %}
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+
+    {% for slider in sliders %}
+    {% if slider.sort_order_slider == 0 %}
+      <div class="item slides active">
+    {% else %}
+      <div class="item slides">
+    {% endif %}
+        <div>
+        {% thumbnail slider.image_slider "1800x870" crop="center" as im %}
+            <img src="{{ im.url }}" width="{{ im.width }}" height="{{ im.height }}" class="img-responsive" alt="{{product.name_product}}" >
+        {% endthumbnail %})
+        </div>
+      <div class="hero">        
+        <hgroup>
+            <h1>{{slider.title_slider}}</h1>        
+            <h3 class="hidden-xs hidden-sm">{{slider.description_slider}}</h3>
+        </hgroup>       
+        
+      </div>
+    </div>
+    {% endfor %}
+  </div> 
+</div
+
+      
+          
