@@ -48,17 +48,3 @@ def product_detail(request, slug):
     return render(request, 'product.html', {'product': product, 'subcategories':subcategories, 'products':products, 'categories':categories})
 
 
-
-'''
-class ProductFilter(django_filters.FilterSet):
-    class Meta:
-        model = Product
-        fields = {'name': ['exact', 'icontains'],
-                  'price': ['exact', 'gte', 'lte'],
-                 }
-
-def product_list(request):
-    filter = ProductFilter(request.GET, queryset=Product.objects.all())
-    return render(request, 'products.html', {'products': filter})
-
-'''
